@@ -11,4 +11,7 @@ public interface ContactServices {
 
     List<Contact> listbyCategory(List<Contact> contacts, ContactType type);
 
+    Long countByCategory(List<Contact> contacts, ContactType type);
+    List<Contact> listByNameEmail(List<Contact> contacts, String name, String email);
+
 }
